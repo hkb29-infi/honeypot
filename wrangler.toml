@@ -1,0 +1,27 @@
+name = "aegis-edge"
+main = "src/index.ts"
+compatibility_date = "2026-11-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[ai]
+binding = "AI"
+
+[vars]
+THREAT_THRESHOLD = "50"
+
+[[kv_namespaces]]
+binding = "THREAT_KV"
+id = "114feb16fea4476b86a103d79351a7ef"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "aegis-telemetry"
+database_id = "aae8f996-4f42-4875-bcd6-412193a998d2"
+migrations_dir = "migrations"
+
+# Set this in the dashboard or with `wrangler secret put ORIGIN_URL`.
+# Requests below the threat threshold are proxied to this URL.
+# ORIGIN_URL = "https://protected-api.example.com"
