@@ -1,0 +1,2 @@
+# Optional local origin for legitimate requests.
+ORIGIN_URL=http://localhost:8788
