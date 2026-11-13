@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.vscode-honeypot-profile/
+.github-cli/
+test-results/
+.dev.vars
+.env
+.env.*
+!.env.example
