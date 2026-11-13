@@ -19,7 +19,7 @@ export function ActivityChart({ attacks, now }: { attacks: Attack[]; now: number
           </rect>
         ))}
       </svg>
-      <figcaption className="mt-3 flex justify-between font-mono text-[10px] text-slate-400">
+      <figcaption className="mt-3 flex justify-between font-mono text-xs text-slate-400">
         <span>24 hours ago</span><span>Loaded feed only</span><span>Now</span>
       </figcaption>
     </figure>
