@@ -16,6 +16,7 @@ export default {
         acid: '#c9f47b',
       },
       boxShadow: {
+        glow: '0 0 28px rgba(98, 230, 224, 0.12)',
         window: '0 32px 90px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(98, 230, 224, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.05)',
       },
     },

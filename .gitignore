@@ -7,6 +7,3 @@ test-results/
 .env
 .env.*
 !.env.example
-.agents/skills/impeccable/
-__pycache__/
-*.py[cod]
