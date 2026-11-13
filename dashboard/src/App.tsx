@@ -44,11 +44,6 @@ export default function App() {
             <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-cyan/35 bg-cyan/10 text-cyan shadow-glow"><Icon name="shield" size={20} /></div>
             <div><div className="text-sm font-semibold tracking-wide text-white">HONEYPOT</div><div className="font-mono text-[10px] tracking-[0.22em] text-slate-400">EDGE DEFENSE</div></div>
           </div>
-          <nav className="mt-12 space-y-2" aria-label="Main navigation">
-            <a href="#overview" className="flex items-center gap-3 rounded-lg bg-white/[.06] px-3 py-3 text-sm font-medium text-cyan"><Icon name="activity" size={17} />Overview</a>
-            <a href="#events" className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm text-slate-400 hover:bg-white/[.04] hover:text-slate-100"><Icon name="radar" size={17} />Attack stream</a>
-            <a href="#how-it-works" className="flex items-center gap-3 rounded-lg px-3 py-3 text-sm text-slate-400 hover:bg-white/[.04] hover:text-slate-100"><Icon name="book" size={17} />How it works</a>
-          </nav>
           <div className="mt-auto rounded-xl border border-line bg-panel/80 p-4">
             <div className="flex items-center gap-2 text-xs font-medium text-slate-300"><span className={`h-2 w-2 rounded-full ${demo ? 'bg-cyan' : live.status === 'live' ? 'bg-acid' : 'bg-amber-300'}`} />{statusLabel}</div>
             <p className="mt-2 text-xs leading-5 text-slate-400">{demo ? 'These are fictional events for exploring the dashboard.' : 'This console reports telemetry from your security Worker.'}</p>
