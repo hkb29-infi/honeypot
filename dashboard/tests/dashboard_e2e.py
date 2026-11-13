@@ -48,7 +48,7 @@ def run():
         expect(page.get_by_role("alert")).to_contain_text("HTTP 503")
         expect(page.get_by_test_id("attack-total")).to_have_text("—")
         expect(page.locator("tbody tr")).to_have_count(0)
-        assert page.locator("body").evaluate("element => getComputedStyle(element).backgroundColor") in ("rgba(0, 0, 0, 0)", "rgb(35, 12, 15)")
+        assert page.locator("body").evaluate("element => getComputedStyle(element).backgroundColor") in ("rgba(0, 0, 0, 0)", "rgb(8, 12, 20)")
         assert page.locator("#overview > div").first.evaluate("element => getComputedStyle(element).borderRadius") == "16px"
         page.get_by_role("button", name="View demo").click()
         expect(page.get_by_test_id("attack-total")).to_have_text("12,482")

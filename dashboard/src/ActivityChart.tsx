@@ -14,12 +14,12 @@ export function ActivityChart({ attacks, now }: { attacks: Attack[]; now: number
         {counts.map((count, index) => (
           <rect key={index} x={index * 20} y={64 - Math.max(2, count / maximum * 62)}
             width="14" height={Math.max(2, count / maximum * 62)} rx="2"
-            className={count ? index === 23 ? 'fill-paprika' : 'fill-pollen' : 'fill-line'} opacity={count ? .9 : .6}>
+            fill={count ? '#62e6e0' : '#202a3a'} opacity={count ? .85 : .7}>
             <title>{23 - index} hours ago: {count} attacks</title>
           </rect>
         ))}
       </svg>
-      <figcaption className="mt-3 flex justify-between font-mono text-[10px] text-muted">
+      <figcaption className="mt-3 flex justify-between font-mono text-[10px] text-slate-400">
         <span>24 hours ago</span><span>Loaded feed only</span><span>Now</span>
       </figcaption>
     </figure>

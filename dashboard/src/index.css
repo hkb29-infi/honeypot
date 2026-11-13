@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 :root {
-  color: #fff4e8;
-  background: #230c0f;
+  color: #e9eef7;
+  background: #080c14;
   font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,8 +15,7 @@
 body { margin: 0; min-width: 320px; min-height: 100vh; }
 button { font: inherit; }
 a, button, [tabindex] { -webkit-tap-highlight-color: transparent; }
-:focus-visible { outline: 2px solid #fcca46; outline-offset: 4px; }
-::selection { background: #fcca46; color: #230c0f; }
+:focus-visible { outline: 2px solid #62e6e0; outline-offset: 4px; }
 html { color-scheme: dark; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -24,11 +23,10 @@ html { color-scheme: dark; }
 }
 
 @layer utilities {
-  .grid-fade {
-    background-image: linear-gradient(rgba(92, 109, 112, .16) 1px, transparent 1px), linear-gradient(90deg, rgba(92, 109, 112, .16) 1px, transparent 1px);
-    background-size: 32px 32px;
-    mask-image: linear-gradient(to bottom, black, transparent 78%);
+  .desktop-grid {
+    background-image: linear-gradient(rgba(98, 230, 224, .075) 1px, transparent 1px), linear-gradient(90deg, rgba(98, 230, 224, .075) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
   .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
-  .scrollbar-thin::-webkit-scrollbar-thumb { background: #4f6272; border-radius: 999px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: #253247; border-radius: 999px; }
 }
